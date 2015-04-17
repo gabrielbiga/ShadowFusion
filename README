@@ -1,0 +1,58 @@
+        Liquare ShadowFusion Engine release 0.0.1
+
+These are the release notes for ShadowFusion release 0.0.1. 
+Read them carefully, as they tell you what this is all about, 
+explain how to complile the engine, and what to do if something goes wrong. 
+
+WHAT IS THIS?
+
+  ShadowFusion is a pathetic try of making a new 2D game engine from scratch.
+  
+LICENSE?
+  
+  It's GNU GENERAL PUBLIC LICENSE Version 2. Enjoy!
+  
+HOW WORKS?
+
+  ShadowEngine Fusion is full written in Java with other native modules (such OpenGL), because it's a game engine, we need access to metal (errr).
+  
+FEATURES?
+
+  XBox360 Controller is fully supported. (Only work with Windows)
+  Graphics is based on libGDX/OpenGL.
+  Physics engine is fully working with Box2D.
+  Physics objects can interact with real sprites.
+  Lights and Shadows are supported and works with Pixel Shaders.
+  LUA Scripting is supported and can manipulate objects in realtime at game stage.
+  LUA JIT have a asynchronous implementation with a threadpool.
+  Multistage is supported.
+  Multi layer is supported.
+  Collections of sprites are supported.
+  Engine can load pixmaps up to 4K resolution.
+  Extensible object inspector for new objects.
+  
+COMPILING:
+  
+  ShadowFusion uses ANT for builds.
+  
+  To simply compile:
+  > ant -Dnb.internal.action.name=rebuild clean jar
+  
+EXECUTE:
+
+  Simply Java jar execute:
+  > java -jar dist/ShadowFusion.jar
+
+NETBEANS:
+
+  Like NetBeans? The project is included. Just open and hit play.
+
+PROBLEMS?
+  
+  Fix it and send a pull request. :)
+  
+KNOWN ISSUES:
+  
+  Multi platform has some problems, the program is only tested in Windows.
+  HUGE memory consumption (More than 3GB) working with 4K sprites.
+  Some times Java Virtual Machine throws segmentation fault at ShadowFusion warm up.
